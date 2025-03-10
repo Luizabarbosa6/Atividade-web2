@@ -12,6 +12,8 @@ const assets = [
   "/img/icone3.png",
   "/img/icone4.png",
   "/img/icon5.png",
+  "/img/icone6.png",
+  "/img/icone7.png",
   "/img/icone1.png",
   "/img/72.png",
   "/img/appstore.png",
