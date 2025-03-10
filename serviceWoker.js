@@ -2,6 +2,10 @@ const staticAnimeSite = 'my-favorite-anime-v1';
 const assets = [
   "/",
   "/index.html",
+  "/pag2.html",
+  "/pag3.html",
+  "/pag4.html",
+  "/pag5.html",
   "/css/styles.css",
   "/img/icone.png",
   "/img/icone2.png",
