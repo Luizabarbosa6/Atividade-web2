@@ -8,7 +8,7 @@
     "theme_color": "#FFD700",
     "icons": [
       {
-        "src": "/icons/icon-180x180.png",
+        "src": "./img/hxh.webp",
         "sizes": "180x180",
         "type": "image/png"
       },
