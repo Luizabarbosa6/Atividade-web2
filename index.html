@@ -37,56 +37,113 @@
             <ul>
                 <li>Top 5</li>
             </ul>
-
         </nav>
-
     </header>
 
-    <section>
+    <section class="container">
         <div class="list">
-            <div class="item active">
-                <div class="hxh-img">
+            <div class="item active" data-index="0">
+                <div class="img2">
                     <img src="./img/hxh.webp" alt="anime-img">
                 </div>
                 <div class="content">
-                    <h2>
-                        Hunter X Hunter
-                    </h2>
+                    <h2>Hunter X Hunter</h2>
                     <div class="quadrado-curvado">
-                    <p class="descripition">
-                        Hunter x Hunter segue Gon Freecss, um garoto que quer se tornar um Hunter para encontrar seu
-                        pai. Ao longo de sua jornada, ele faz amigos e enfrenta desafios perigosos, como o exame
-                        Hunter e batalhas contra inimigos poderosos.
+                        <p class="descripition">
+                            Hunter x Hunter segue Gon Freecss, um garoto que quer se tornar um Hunter para encontrar seu
+                            pai. Ao longo de sua jornada, ele faz amigos e enfrenta desafios perigosos, como o exame
+                            Hunter e batalhas contra inimigos poderosos...
+                        </p>
+                        <button class="information">Ler Mais</button>
+                    </div>
+                </div>
+            </div>
 
-                    </p>
-                    
-                    <button class="information">
-                        Ler Mais
-                    </button>
-                   </div>
+            <div class="item" data-index="1">
+                <div class="img2">
+                    <img src="./img/onepiece.webp" alt="anime-img">
+                </div>
+                <div class="content">
+                    <h2>One Piece</h2>
+                    <div class="quadrado-curvado">
+                        <p class="descripition">
+                            One Piece, criado por Eiichiro Oda, segue Monkey D. Luffy em sua jornada para se tornar o Rei dos 
+                            Piratas. Ele forma a Tripulação do Chapéu de Palha com aliados como Zoro e Nami. A série combina ação, 
+                            comédia e temas como amizade e liberdade... 
+                        </p>
+                        <button class="information">Ler Mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-index="2">
+                <div class="img2">
+                    <img src="./img/blc.webp" alt="anime-img">
+                </div>
+                <div class="content">
+                    <h2>Black Clover</h2>
+                    <div class="quadrado-curvado">
+                        <p class="descripition">
+                            Black Clover acompanha Asta, um jovem sem magia em um mundo onde todos a possuem. Determinado a se tornar
+                            o Rei Mago, ele enfrenta desafios ao lado de seu talentoso amigo Yuno...
+                        </p>
+                        <button class="information">Ler Mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-index="3">
+                <div class="img2">
+                    <img src="./img/shingeki.webp" alt="anime-img">
+                </div>
+                <div class="content">
+                    <h2>Attack on Titan</h2>
+                    <div class="quadrado-curvado">
+                        <p class="descripition">
+                            Attack on Titan se passa em um mundo onde a humanidade vive cercada por muralhas para se proteger dos Titãs,
+                            gigantes devoradores de humanos. A história segue Eren Yeager, que busca vingança após perder sua mãe e se junta 
+                            à tropa de exploração com Mikasa e Armin...
+                        </p>
+                        <button class="information">Ler Mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-index="4">
+                <div class="img2">
+                    <img src="./img/death-note-netflix.webp" alt="anime-img">
+                </div>
+                <div class="content">
+                    <h2>Death Note</h2>
+                    <div class="quadrado-curvado">
+                        <p class="descripition">
+                            Death Note segue Light Yagami, um estudante que encontra um caderno capaz de matar qualquer pessoa cujo nome seja 
+                            escrito nele. Ao usar o caderno para eliminar criminosos, ele entra em um jogo de gato e rato com o detetive L...
+                        </p>
+                        <button class="information">Ler Mais</button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="arrows">
-            <button><img src="./img/arrow.png" alt="seta direita" >  </button>
-        <a href="pag2.html">
-            <button><img src="./img/arrow.png" alt="seta esquerda"> </button>
-        </a>
+            <button id="prev"><img src="./img/arrow.png" alt="seta esquerda"></button>
+            <button id="next"><img src="./img/arrow.png" alt="seta direita"></button>
         </div>
+
         <div class="indicators">
             <div class="number">01</div>
             <ul>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="active" data-index="0"></li>
+                <li data-index="1"></li>
+                <li data-index="2"></li>
+                <li data-index="3"></li>
+                <li data-index="4"></li>
             </ul>
-
         </div>
     </section>
-    <script src="./index.js"></script>
+
+    <script src="./scripts.js"></script>
 </body>
 
 </html>
