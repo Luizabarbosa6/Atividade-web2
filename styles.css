@@ -405,7 +405,7 @@ hr {
 @media (max-width:390px){
     .content h2{
         display: flex;
-        margin-top: 80%;
+        margin-top: 70%;
         margin-left: 24%;
         font-size: 2em;
     }
