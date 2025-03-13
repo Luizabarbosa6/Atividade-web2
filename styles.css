@@ -297,7 +297,7 @@ hr {
 @media (max-width: 400px){
     .content h2{
         display: flex;
-        margin-top: 95%;
+        margin-top: 90%;
         margin-left: 17%;
     }
 
@@ -405,7 +405,7 @@ hr {
 @media (max-width:390px){
     .content h2{
         display: flex;
-        margin-top: 88%;
+        margin-top: 87%;
         margin-left: 24%;
         font-size: 2em;
     }
