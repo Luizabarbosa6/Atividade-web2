@@ -1,27 +1,29 @@
-/* Reset de margens e preenchimentos padrão */
+
 * {
-    margin: 1;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-/* Certifique-se de que a classe 'active' controla a exibição das seções */
+
+
 .container .list .item {
-    display: none; /* Inicialmente todas as seções estão escondidas */
+    display: none; 
 }
 
 .container .list .item.active {
-    display: block; /* Somente a seção ativa será exibida */
+    display: block; 
 }
 
-/* Cor de fundo do corpo */
+
 body {
-    background-color: #000000; /* fundo preto */
+    background-color: #000000; 
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
-/* Estilos para o cabeçalho */
+
 header {
     display: flex;
     align-items: center;
@@ -30,102 +32,104 @@ header {
     position: relative;
 }
 
-/* Logo no header */
+
 header img {
-    width: 143px; /* Tamanho da imagem */
+    width: 143px; 
     height: 80px;
-    margin-left: -10%;
-    margin-top: -1%;
 }
 
-/* Texto Top 5 no header */
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
 header nav ul li {
-    position: flex;
-    top: 26px;
-    left: 302px;
-    font-size: 15px; /* Tamanho maior no desktop */
+    font-size: 15px; 
     font-weight: bold;
     color: #ffffff;
 }
 
-/* Indicadores */
+
 .indicators {
     position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translatex(-50%);
+    margin: -1%;
+    top: 7%;
+    left: 55%;
+    transform: translateX(-50%);
     height: 100px;
     width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: end;
     gap: 5px;
+}
 
-    & .number {
-        font-size: 3em;
-        color:#ffffff;
-        font-family: "Poppins", serif;
-       
-    }
+.indicators .number {
+    font-size: 3em;
+    color: #ffffff;
+    font-family: "Poppins", serif;
+}
 
-    & ul {
-        display: flex;
-        gap: 10px;
+.indicators ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
 
-        & li {
-            width: 50px;
-            height: 5px;
-            background-color: gold;
-            border-radius: 5px;
-        }
+.indicators ul li {
+    width: 50px;
+    height: 5px;
+    background-color: gold;
+    border-radius: 5px;
+}
 
-        & .active {
-            background-color: aliceblue;
-
-        }
-    }
-
-
-
+.indicators ul .active {
+    background-color: aliceblue;
 }
 
 
 .img2 img {
-    align-self: center;
-    width: 400px;
-    height: 250px;
-    position: absolute;
-    left: 32px;
-    top: 208px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border-radius: 20px;
+    margin: 44px auto;
+    display: block;
 }
+
 
 .content h2 {
-    position: relative;
-    display: flex;
-   margin-left: 25%;
-    color: white;
     text-align: center;
-    margin-top: 80%;
-    font-size: 2em; 
+    font-size: 2em;
+    margin: 20px 0;
 }
 
-hr {
-    position: absolute;
-    top: 473px;
-    left: 20px;
-    width: 100%;
-    border: 1px solid white;
+
+
+
+
+.linha-central {
+    width: 80%; 
+    height: 1px;
+    background-color: white;
+    margin: 0 auto; 
 }
+
 
 .arrows {
-    width: 110vw;
-    position: absolute;
-    top: 60%;
-    left: 55%;
-    transform: translate(-50%, -25px);
-    display: flex;
-    justify-content: space-between;
+    width: 90vw;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative ; 
+margin-top: -15% auto; 
+margin-left: 50%;
+transform: translate(-50%, -40px); 
+display: flex;
+justify-content: space-between;
+z-index: 10; 
 
 
 
@@ -155,320 +159,86 @@ hr {
 }
 
 
-&::before {
-    content: '';
-    position: absolute;
-    height: 70px;
-    width: 110%;
-    top: 60%;
-    border-top: 1px solid white;
-}
-
-/* Quadrado curvado para o description e o information */
 .quadrado-curvado {
-    position: absolute;
-    top: 60%;
-    left: 28px;
-    width: 338px;
-    height: 196px;
     background: transparent;
     border: 1px solid white;
     border-radius: 23px;
     padding: 20px;
+    margin: 20px auto;
+    max-width: 338px;
 }
 
-/* Descrição */
+
 .descripition {
-    font-size: 12px; /* Tamanho de fonte maior no desktop */
+    font-size: 12px; 
     color: white;
     line-height: 1.5;
 }
 
 /* Botão de informação */
 .information {
-    position: flex;
-    align-self: center;
-    top: 120px;
-    left: 70%;
     width: 121px;
     height: 27px;
     background-color: #F3C200;
     color: rgb(10, 10, 10);
     border: none;
     border-radius: 50px;
-    font-size: 16px; /* Tamanho de fonte maior no desktop */
+    font-size: 16px;
     cursor: pointer;
+    display: block;
+    margin: 20px auto;
 }
 
-/* Ajuste para o layout responsivo no desktop */
 @media (min-width: 768px) {
-    /* Indicadores */
-    
-
-    /* A imagem do anime pode estar mais centralizada */
     .img2 img {
-        width: 40%; /* A imagem fica menor e centralizada no desktop */
-        left: 30%;
-        top: 250px;
+        max-width: 400px;
     }
 
-    /* Ajustando o quadrado curvado */
     .quadrado-curvado {
-        width: 70%; /* Deixa o quadrado curvado mais largo */
-        left: 15%;
+        max-width: 500px;
     }
 
-    /* Ajuste na posição do botão de informação */
     .information {
-        position: relative;
-        top: 50px;
-        left: 20%;
+        margin: 20px auto;
     }
 }
 
 @media (max-width: 500px) {
-    /* Indicadores */
-
-    .content h2{
-        display: block;
-        margin-top: 80%;
-        margin-left: 2%;
-
-    }
-
-    /* A imagem do anime pode estar mais centralizada */
-    .img2 img {
-        width: 70%; /* A imagem fica menor e centralizada no desktop */
-        left: 18%;
-        top: 250px;
-        height: 200px;
-    }
-
-    /* Ajustando o quadrado curvado */
-    .quadrado-curvado {
-        margin-top: 5%;
-        width: 70%;
-        height: 250px; /* Deixa o quadrado curvado mais largo */
-        left: 15%;
-    }
-
-    /* Ajuste na posição do botão de informação */
-    .information {
-        position: relative;
-        top: 50px;
-        left: 80px;
-    }
-}
-@media (max-width: 430px) {
-    /* Indicadores */
-
-    .content h2{
-        display: flex;
-        margin-top: 90%;
-        margin-left: 20%;
-    }
-
-    /* A imagem do anime pode estar mais centralizada */
-    .img2 img {
-
-        width: 70%; /* A imagem fica menor e centralizada no desktop */
-        left: 15%;
-        top: 28%;
-        width: 320px;
-        height: 200px;
-    }
-
-    /* Ajustando o quadrado curvado */
-    .quadrado-curvado {
-        margin-top: 5%;
-        width: 80%; /* Deixa o quadrado curvado mais largo */
-        left: 17%;
-    }
-
-    /* Ajuste na posição do botão de informação */
-    .information {
-        position: relative;
-        top: 50px;
-        left: 90px;
-    }
-    
-}
-
-@media (max-width: 400px){
-    .content h2{
-        display: flex;
-        margin-top: 90%;
-        margin-left: 17%;
-    }
-
-    .indicators {
-        height: 110px;
-        width: 90vw;
-       &.number{
-        font-size: 40px;
-    }
-   }
-    /* A imagem do anime pode estar mais centralizada */
-    .img2 img {
-        width: 70%; /* A imagem fica menor e centralizada no desktop */
-        left: 13%;
-        top: 30%;
-        width: 300px;
-        height: 170px;
-    }
-
-    /* Ajustando o quadrado curvado */
-    .quadrado-curvado {
-        margin-top: 5%;
-        width: 70%; /* Deixa o quadrado curvado mais largo */
-        left: 15%;
-    }
-    .information {
-        position: relative;
-        top: 40px;
-        left: 70px;
-    }
-
-  
-    
-}
-@media (min-width:501px){
-    .content h2{
-        display: flex;
-        margin-top: 75%;
-        margin-left: 24%;
-    }
-
-    
-   
-    /* A imagem do anime pode estar mais centralizada */
-    .img2 img {
-        width: 80%; /* A imagem fica menor e centralizada no desktop */
-        left: 15%;
-        top: 30%;
-        width: 370px;
-        height: 210px;
-    }
-
-    /* Ajustando o quadrado curvado */
-    .quadrado-curvado {
-        margin-top: 5%;
-        width: 70%; /* Deixa o quadrado curvado mais largo */
-        left: 17%;
-    }
-    .information {
-        position: relative;
-        top: 20px;
-        left: 110px;
-    }
-    
-    
-}
-
-@media (min-width:550px){
-    .content h2{
-        position: fixed;
-        top: 5%;
-        left: 2%;
-    }
-
-    .indicators {
-        height: 110px;
-        width: 90vw;
-       &.number{
-        font-size: 40px;
-    }
-   }
-    /* A imagem do anime pode estar mais centralizada */
-    .img2 img {
-        width: 80%; /* A imagem fica menor e centralizada no desktop */
-        left: 15%;
-        top: 30%;
-        width: 370px;
-        height: 210px;
-    }
-
-    /* Ajustando o quadrado curvado */
-    .quadrado-curvado {
-        margin-top: 5%;
-        width: 70%; /* Deixa o quadrado curvado mais largo */
-        left: 17%;
-    }
-
-    .information {
-        position: relative;
-        top: 20px;
-        left: 120px;
-    }
-    
-}
-@media (max-width:390px){
-    .content h2{
-        display: flex;
-        margin-top: 70%;
-        margin-left: 24%;
+    .content h2 {
         font-size: 2em;
+        margin-top: 70px;
     }
 
-    
-   
-    /* A imagem do anime pode estar mais centralizada */
     .img2 img {
-        width: 80%; /* A imagem fica menor e centralizada no desktop */
-        left: 10%;
-        top: 25%;
-        width: 370px;
-        height: 210px;
+        max-width: 350px;
     }
 
-    /* Ajustando o quadrado curvado */
     .quadrado-curvado {
-        margin-top: 5%;
-        width: 80%; /* Deixa o quadrado curvado mais largo */
-        left: 17%;
+        max-width: 300px;
     }
+
     .information {
-        position: relative;
-        top: 40px;
-        left: 80px;
+        width: 100px;
+        font-size: 14px;
     }
-    
-    
 }
 
-@media (max-width:360px){
-    .content h2{
-        display: flex;
-        margin-top: 80%;
-        margin-left: 16%;
-        font-size: 2em;
+@media (max-width: 400px) {
+    .content h2 {
+        font-size: 1.8em;
+        margin-top: 80px;
     }
 
-    
-   
-    /* A imagem do anime pode estar mais centralizada */
     .img2 img {
-        width: 70%; /* A imagem fica menor e centralizada no desktop */
-        left: 8%;
-        top: 25%;
-        width: 350px;
-        height: 200px;
+        max-width: 300px;
     }
 
-    /* Ajustando o quadrado curvado */
     .quadrado-curvado {
-        margin-top: 5%;
-        width: 80%; /* Deixa o quadrado curvado mais largo */
-        left: 15%;
+        max-width: 250px;
     }
+
     .information {
-        position: relative;
-        top: 40px;
-        left: 70px;
+        width: 80px;
+        font-size: 12px;
     }
-    
-    
 }
-
-
-
