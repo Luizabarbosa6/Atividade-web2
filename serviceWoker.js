@@ -2,22 +2,13 @@ const staticAnimeSite = 'my-favorite-anime-v1';
 const assets = [
   "/",
   "/index.html",
-  "/pag2.html",
-  "/pag3.html",
-  "/pag4.html",
-  "/pag5.html",
   "/css/styles.css",
-  "/img/icone.png",
-  "/img/icone2.png",
-  "/img/icone3.png",
-  "/img/icone4.png",
-  "/img/icon5.png",
-  "/img/icone6.png",
-  "/img/icone7.png",
-  "/img/icone1.png",
-  "/img/72.png",
-  "/img/appstore.png",
-  "/img/playstore.png"
+  "/img/android-icon-48x48.png",
+  "/img/android-icon-72x72.png",
+  "/img/android-icon-96x96.png",
+  "/img/android-icon-144x144.png",
+  "/img/android-icon-152x152.png",
+  "/img/android-icon-180x180.png",
 ];
 
 self.addEventListener("install", installEvent => {
