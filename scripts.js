@@ -8,24 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextButton = document.getElementById('next');
 
 
-    /*const prev2Button = document.getElementById('prev');
-    const next2Button = document.getElementById('next');
-
-
-    const prev3Button = document.getElementById('prev');
-    const next3Button = document.getElementById('next');
-
-
-    const prev4Button = document.getElementById('prev');
-    const next4Button = document.getElementById('next');
-
+   
     
-    const prev5Button = document.getElementById('prev');
-    const next5Button = document.getElementById('next');
-    
-    */
-
-
 
     let currentIndex = 0;
 
@@ -51,13 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateActiveItem(currentIndex);
     });
 
-    indicators.forEach((indicator, index) => {
-        indicator.addEventListener('click', () => {
-            currentIndex = index;
-            updateActiveItem(currentIndex);
-        });
-    });
-
+    
     
     updateActiveItem(currentIndex);
 });

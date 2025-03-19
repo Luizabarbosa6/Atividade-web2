@@ -6,7 +6,9 @@
 }
 
 
-
+.container{
+    position: relative;
+}
 
 .container .list .item {
     display: none; 
@@ -120,16 +122,13 @@ header nav ul li {
 
 .arrows {
     width: 90vw;
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative ; 
-margin-top: -15% auto; 
-margin-left: 50%;
-transform: translate(-50%, -40px); 
-display: flex;
-justify-content: space-between;
-z-index: 10; 
+    position: absolute;
+    top: 62.5%;
+    left: 53%;
+    transform: translate(-50%, -25px);
+    display: flex;
+    justify-content: space-between;
+
 
 
 
@@ -203,7 +202,18 @@ z-index: 10;
     }
 }
 
+@media (max-width: 600px){
+.arrows{
+    top: 61%;
+}
+
+}
+
 @media (max-width: 500px) {
+
+    .arrows{
+        top: 59%;
+    }
     .content h2 {
         font-size: 2em;
         margin-top: 70px;
@@ -224,6 +234,13 @@ z-index: 10;
 }
 
 @media (max-width: 400px) {
+  
+
+    .arrows{
+        top: 54%;
+    
+
+    }
     .content h2 {
         font-size: 1.8em;
         margin-top: 80px;
