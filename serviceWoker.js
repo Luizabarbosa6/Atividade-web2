@@ -9,6 +9,9 @@ const assets = [
   "/img/android-icon-144x144.png",
   "/img/android-icon-152x152.png",
   "/img/android-icon-180x180.png",
+  "img/icon/favicon-16x16.png",
+  "img/icon/favicon-32x32.png"
+
 ];
 
 self.addEventListener("install", installEvent => {
