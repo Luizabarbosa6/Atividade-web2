@@ -42,7 +42,21 @@
         "src": "icon/apple-icon-180x180.png",
         "sizes": "180x180",
         "type": "image/png"
+    },
+    {
+        "src": "icon/icon-512x512",
+        "sizes": "512x512",
+        "type": "image/png"
+    },  {
+        "src": "icon/ms-icon-310x310",
+        "sizes": "310x310",
+        "type": "image/png"
     }
+
+
+
+
+
     ]
 
     
